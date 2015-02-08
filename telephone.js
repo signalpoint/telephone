@@ -36,7 +36,7 @@ function telephone_field_formatter_view(entity_type, entity, field, instance, la
             text: text,
             path: null,
             attributes: {
-              href: 'tel:+' + item.value
+              href: 'tel:+' + item.value.replace('+', '')
             }
           };
         }
